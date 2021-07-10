@@ -8,17 +8,17 @@ namespace CodeGenerator
     {
         static async Task Main()
         {
-            // var basePath =
-            //     @"C:\Users\mahdi\w\seppay-service\src\Wallet\core\Sep.SepPay.Wallet.Application\Wallet\Commands";
-            // var baseNamespace = @"Sep.SepPay.Wallet.Application.Wallet.Commands";
-            // var commandName = "AddAccountToWallet";
-            // await CommandGenerator.Generate(basePath, baseNamespace, commandName);
+            const string basePath =
+            @"C:\Users\mahdi\w\seppay-service\src\Wallet\core\Sep.SepPay.Wallet.Application\Wpg\Commands";
+            const string baseNamespace = @"Sep.SepPay.Wallet.Application.Wpg.Commands";
+            const string  commandName = "AuthorizeMerchant";
+            await CommandGenerator.Generate(basePath, baseNamespace, commandName);
             
-            var basePath =
-                @"C:\Users\mahdi\w\seppay-service\src\Wallet\core\Sep.SepPay.Wallet.Application\Wallet\Queries";
-            var baseNamespace = @"Sep.SepPay.Wallet.Application.Wallet.Queries";
-            var queryName = "TrackRequest";
-            await QueryGenerator.Generate(basePath, baseNamespace, queryName);
+            // const string basePath =
+                // @"C:\Users\mahdi\w\seppay-service\src\Wallet\core\Sep.SepPay.Wallet.Application\Wpg\Queries";
+            // const string baseNamespace = @"Sep.SepPay.Wallet.Application.Wallet.Queries";
+            // const string queryName = "TrackRequest";
+            // await QueryGenerator.Generate(basePath, baseNamespace, queryName);
         }
     }
 }
